@@ -1,5 +1,5 @@
 import { IAzureConfig, ITestResult } from './interface'
-import { AzureTestPlanReporter } from '@gmangiapelo/azuredevops-test-reporter'
+import { AzureTestPlanReporter } from 'azuredevops-test-reporter-ts'
 import { Capabilities, Frameworks, Options, Services } from '@wdio/types'
 import { PickleTag } from '@cucumber/messages'
 import { ITestCaseHookParameter } from '@cucumber/cucumber'
