@@ -1,7 +1,7 @@
 # WDIO Azure Devops Service
 
-[![version](https://img.shields.io/npm/v/@gmangiapelo/wdio-azure-devops-service.svg)](https://www.npmjs.com/package/@gmangiapelo/wdio-azure-devops-service)
-[![downloads](https://img.shields.io/npm/dt/@gmangiapelo/wdio-azure-devops-service.svg)](https://www.npmjs.com/package/@gmangiapelo/wdio-azure-devops-service)
+[![version](https://img.shields.io/npm/v/wdio-azure-devops-service-ts.svg)](https://www.npmjs.com/package/wdio-azure-devops-service-ts)
+[![downloads](https://img.shields.io/npm/dt/wdio-azure-devops-service-ts.svg)](https://www.npmjs.com/package/wdio-azure-devops-service-ts)
 
 Publishes [WebdriverIO](https://webdriver.io/) results on Azure DevOps Test Plans.
 
@@ -19,8 +19,8 @@ Core features:
 Install this module locally with the following command to be used as a (dev-)dependency:
 
 ```shell
-npm install --save @gmangiapelo/wdio-azure-devops-service
-npm install --save-dev @gmangiapelo/wdio-azure-devops-service
+npm install --save wdio-azure-devops-service-ts
+npm install --save-dev wdio-azure-devops-service-ts
 ```
 
 Instructions on how to install `WebdriverIO` can be found [here.](https://webdriver.io/docs/gettingstarted)
@@ -33,11 +33,11 @@ Instructions on how to install `WebdriverIO` can be found [here.](https://webdri
 
 ### Configuration
 
-Since `@gmangiapelo/wdio-azure-devops-service` is a service, you can set it up in your `wdio.conf.js` file as follows
+Since `wdio-azure-devops-service-ts` is a service, you can set it up in your `wdio.conf.js/.ts` file as follows
 
 ```js
-import AzureDevopsService from "@gmangiapelo/wdio-azure-devops-service";
-// wdio.conf.js
+import AzureDevopsService from "wdio-azure-devops-service-ts";
+// wdio.conf.js/.ts
 exports.config = {
     // ...
     // =====
@@ -48,11 +48,10 @@ exports.config = {
               AzureDevopsService,
               {
                   pat: 'u46xjx2ol4px36zg3z565uz52dbvshctlulkhrsecxiamn6nhtwa',
-                  organizationUrl: 'https://dev.azure.com/gianlucamangiapelo',
+                  organizationUrl: 'https://dev.azure.com/',
                   projectId: '8b3c68ac-f69d-41c6-bbad-921d8bae9819',
                   planId: 263072,
                   suiteId: 263073,
-                  caseIdRegex: '@?[ref](\\d+)',
                   runName: 'FE regression tests for TestPlan',
               },
           ],
@@ -168,6 +167,3 @@ Type: `string`
 Default: `"@?[cC](\d+)"`
 
 Required: `false`
-
-## Author
-Gianluca Mangiapelo - [github](https://github.com/gianlucamangiapelo)
