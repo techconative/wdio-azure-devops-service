@@ -33,11 +33,11 @@ Instructions on how to install `WebdriverIO` can be found [here.](https://webdri
 
 ### Configuration
 
-Since `wdio-azure-devops-service-ts` is a service, you can set it up in your `wdio.conf.js/.ts` file as follows
+Since `wdio-azure-devops-service-ts` is a service, you can set it up in your `wdio.conf.js` or `.ts` file as follows
 
 ```js
 import AzureDevopsService from "wdio-azure-devops-service-ts";
-// wdio.conf.js/.ts
+// wdio.conf.js or .ts
 exports.config = {
     // ...
     // =====
@@ -110,7 +110,7 @@ Required: `true`
 
 The base url of your Azure DevOps instance.
 
-Example: `"https://dev.azure.com/gianlucamangiapelo"`
+Example: `"https://dev.azure.com/"`
 
 Type: `string`
 
