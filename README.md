@@ -27,9 +27,9 @@ Instructions on how to install `WebdriverIO` can be found [here.](https://webdri
 
 ## Usage
 
-> _wdio-azure-devops-service_ supports **NodeJS 8 or higher**
+> _wdio-azure-devops-service-ts_ supports **NodeJS 8 or higher**
 
-> _wdio-azure-devops-service_ supports **commonjs** and **esm**
+> _wdio-azure-devops-service-ts_ supports **commonjs** and **esm**
 
 ### Configuration
 
