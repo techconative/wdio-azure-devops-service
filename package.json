@@ -55,7 +55,7 @@
     "@wdio/reporter": "^7.19.7",
     "@wdio/types": "^7.19.5",
     "azure-devops-node-api": "^11.1.1",
-    "azuredevops-test-reporter-ts": "^1.0.1",
+    "azuredevops-test-reporter-ts": "^1.0.4",
     "validate": "^5.2.0"
   },
   "devDependencies": {
@@ -63,6 +63,7 @@
     "@commitlint/config-conventional": "^19.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
+    "@semantic-release/git": "^10.0.1",
     "@types/jest": "^27.0.1",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
@@ -74,6 +75,7 @@
     "pinst": "^2.1.6",
     "prettier": "^2.4.0",
     "rollup": "^4.14.1",
+    "semantic-release": "^23.0.8",
     "ts-jest": "^27.0.5",
     "ts-loader": "^9.2.5",
     "typescript": "^4.4.3"

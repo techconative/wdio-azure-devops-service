@@ -9,10 +9,10 @@ Core features:
 
 * Support for Jasmine/Jest/Mocha and Cucumber runtime frameworks
 * Test results are aggregated under the same test run if you are executing more spec(test) files and they are belongs to the same suite
+* Using Azure Configurations, test results can be categorized as per the configuration (dev/stage/prod) used
 * Results are reported immediately after single test execution (real-time reporting)
 * Test run is closed after last spec(test) file has been finished
 * Multi suite support
-
 
 ## Installation
 
@@ -53,6 +53,7 @@ exports.config = {
                   planId: 263072,
                   suiteId: 263073,
                   runName: 'FE regression tests for TestPlan',
+                  configurationName: 'stage'
               },
           ],
     ],
@@ -89,10 +90,15 @@ Scenario Can authenticate a valid user
 
 ### Azure DevOps Report Example
 
-This is an example of the results pushed on AZ Test Plans, during a test run
+#### This is an example of the results pushed on AZ Test Plans, during a test run
 ![AzureDevops Test Plans example](./img/AZ-DevOps-example.png)
 
-<br>
+#### If you have multiple Configurations, using `configurationName` test results can be categorized
+![AzureDevops Test Plans Configurations](./img/AZ-config.png)
+
+![AzureDevops Test Results History](./img/AZ-resultHistory.png)
+
+![AzureDevops Test Point History](./img/AZ-testpointHistory.png)
 
 ## Service Options
 
@@ -165,5 +171,15 @@ Custom regular expression to match the testCaseId from tag or title test case.
 Type: `string`
 
 Default: `"@?[cC](\d+)"`
+
+Required: `false`
+
+### configurationName
+
+If you have multiple Configurations in Azure (Test Plans - Configurations) apart from the default-one, you need to mention the configuration name to filter the test points as per the configuration while creating test run & update test results.
+
+Example: `"prod"`
+
+Type: `string`
 
 Required: `false`
